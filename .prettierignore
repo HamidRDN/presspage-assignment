@@ -1,0 +1,8 @@
+# Build folders
+build/
+out/
+dist/
+.output/
+.temp/
+.cache/
+

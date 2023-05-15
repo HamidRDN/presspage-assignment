@@ -1,0 +1,49 @@
+{
+    "name": "presspage-assignment",
+    "private": true,
+    "version": "0.0.0",
+    "engines": {
+        "node": "^18.16.0",
+        "yarn": "^3.5.1"
+    },
+    "packageManager": "yarn@3.5.1",
+    "scripts": {
+        "dev:vue": "yarn workspace @pp/vue dev",
+        "build:vue": "yarn workspace @pp/vue build",
+        "preview:vue": "yarn workspace @pp/vue previe",
+        "test:vue": "yarn workspace @pp/vue test",
+        "lint:vue": "yarn workspace @pp/vue lint",
+        "dev:react": "yarn workspace @pp/react dev",
+        "build:rect": "yarn workspace @pp/react build",
+        "preview:react": "yarn workspace @pp/react previe",
+        "test:react": "yarn workspace @pp/react test",
+        "lint:react": "yarn workspace @pp/react lint",
+        "lint:prettier": "prettier --write ./*.json",
+        "cypress:open": "cypress open",
+        "cypress:run": "cypress run"
+    },
+    "devDependencies": {
+        "@rushstack/eslint-patch": "^1.2.0",
+        "@types/node": "^20.1.4",
+        "@typescript-eslint/eslint-plugin": "^5.59.5",
+        "@typescript-eslint/parser": "^5.59.5",
+        "@vue/test-utils": "^2.3.2",
+        "browserslist-to-esbuild": "^1.2.0",
+        "cypress": "^12.12.0",
+        "eslint": "^8.40.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-import-resolver-typescript": "^3.5.5",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-unicorn": "^47.0.0",
+        "prettier": "^2.8.8",
+        "typescript": "^5.0.4",
+        "vite": "^4.3.5",
+        "vite-tsconfig-paths": "^4.2.0",
+        "vitest": "^0.31.0",
+        "vue-tsc": "^1.6.5"
+    },
+    "workspaces": [
+        "apps/*"
+    ]
+}
